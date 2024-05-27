@@ -23,10 +23,3 @@ export function decrypt(encrypted: string): string {
     let decrypted = decipher.update(encrypted, 'base64', 'utf8');
     return decrypted + decipher.final('utf8');
 }
-
-// const enc = encrypt('123');
-
-// console.log('hash: ' + generateHash('123'));
-// console.log('hash cant be decrypted');
-// console.log('encrypt: ' + enc);
-// console.log('decrypt: ' + decrypt(enc));
